@@ -26,10 +26,24 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="today">Today is:&nbsp&nbsp<span id="currentDay" class="lead"></span> </p>
     </header>
 
-    <div id="dateTime"></div>
+    <div id="testField">
+      <fieldset>
+        <legend>Test Field</legend>
+
+        <input type="text" id="inpValue" placeholder="Enter a value...">
+        <button type="button" id="btnInsert">Insert Data</button>
+      </fieldset>
+      <fieldset>
+        <Legend>Local Storage</Legend>
+        <div id="lsOutput"></div>
+      </fieldset>
+    </div>
+
+    <!-- <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="" id="" cols="30" rows="10"></textarea> -->
 
     <div class="container">
       <!-- Timeblocks go here -->
