@@ -1,3 +1,15 @@
+var currentTime = document.getElementById('current-time')
+
+
+var mom = '';
+
+setInterval(() => {
+      mom = moment().format('LTS');
+      currentTime.innerHTML = mom;
+
+}, 1000);
+
+
 
 
 var m = moment();
@@ -48,6 +60,7 @@ $("#currentDay").text(m.format( "MMM Do, YYYY"));
       }
 
 
+
       console.log(moment());
 
 // var myDiv = document.createElement("div")
@@ -81,3 +94,4 @@ var myDiv = $(".container");
             console.log(myDiv)
 
 }
+
