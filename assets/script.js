@@ -138,12 +138,3 @@ if ( hour < 9 ) {
       console.log(moment());
 
 
-
-
-
-
-
-
-
-//createTimeSlots();      
-
