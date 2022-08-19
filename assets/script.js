@@ -102,14 +102,14 @@ window.onload = () => {
       console.log(hour)
 }
 
-hour = 10;
+hour = 9;
 
 if ( hour < 9 ) {
-      textArea1.style.backgroundColor = 'green'
+      textArea1.style.backgroundColor = 'lightgreen'
 } else if (  hour === 9 ) {
-      textArea1.style.backgroundColor = 'yellow'
+      textArea1.style.backgroundColor = 'coral'
 } else {
-      textArea1.style.backgroundColor = 'red'
+      textArea1.style.backgroundColor = 'white'
 }
 
 
