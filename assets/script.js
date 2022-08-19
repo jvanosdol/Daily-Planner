@@ -1,23 +1,32 @@
 var currentTime = document.getElementById('current-time')
+var textArea = document.getElementsByClassName('text-area')
+var textArea1 = document.getElementById('text-area1')
 
+var saveBtn1 = document.getElementById('saveBtn1')
+var deleteBtn1 = document.getElementById('deleteBtn1')
 
 var mom = '';
 
+
+
 setInterval(() => {
       mom = moment().format('LTS');
+      momHr = moment().format('LT');
       currentTime.innerHTML = mom;
 
 }, 1000);
 
 
-
+// function styleContainers() {
+//       if ( momHr > 9 ) {
+//             textArea9.style.background = "brown";
+//       }
+// }
 
 var m = moment();
 $("#currentDay").text(m.format( "MMM Do, YYYY"));
 
-
-
-
+var hour = moment().hours();
 
       console.log(`toString() => ${m.toString()}`);
       console.log(`toISOString() => ${m.toISOString()}`);
@@ -35,22 +44,76 @@ $("#currentDay").text(m.format( "MMM Do, YYYY"));
       localStorage.removeItem('name1')
 
       var inpKey = document.querySelector('#inpKey');
-      var inpValue =document.querySelector('#inpValue');
+      var inpValue = document.querySelector('#inpValue');
       var btnInsert = document.querySelector('#btnInsert');
       var lsOutput = document.querySelector('#lsOutput');
 
       btnInsert.addEventListener('click', () =>  {
-            var key = 'event2';
-            var value = inpValue.value;
+            let key = 'event2';
+            let value = textArea.value;
 
             if ( key && value ) {
-                  localStorage.setItem(key, value);
-                  location.reload();
+                  window.localStorage.setItem(key, value);
+                  //location.reload();
             }
+
+            let test2 = window.localStorage.getItem('event2')
+
+
+            console.log(test2)
 
             console.log(key)
             console.log(value)
       });
+
+
+
+      saveBtn1.addEventListener('click', () =>  {
+            let key = 'textArea1';
+            let value = textArea1.value;
+
+            if ( key && value ) {
+                  window.localStorage.setItem(key, value);
+                  //location.reload();
+            }
+
+            let test2 = window.localStorage.getItem('textArea1')
+
+
+            console.log(test2)
+
+            console.log(key)
+            console.log(value)
+      });
+
+      deleteBtn1.addEventListener('click', () => {
+            window.localStorage.clear('textArea1');
+            location.reload();
+      });
+
+
+
+
+window.onload = () => {
+      let test3 = window.localStorage.getItem('textArea1')
+      console.log(test3)
+      textArea1.textContent = test3;
+
+      console.log(hour)
+}
+
+hour = 10;
+
+if ( hour < 9 ) {
+      textArea1.style.backgroundColor = 'green'
+} else if (  hour === 9 ) {
+      textArea1.style.backgroundColor = 'yellow'
+} else {
+      textArea1.style.backgroundColor = 'red'
+}
+
+
+
 
       for (var i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
@@ -63,35 +126,66 @@ $("#currentDay").text(m.format( "MMM Do, YYYY"));
 
       console.log(moment());
 
+
+
 // var myDiv = document.createElement("div")
 
-var myDiv = $(".container");
-    myDiv.html("");
+// function addClassName(i) {
+//       if ( i > momHr ) {
+//           textArea.style = 'red'  
+//       }
+      
+// }
 
+
+
+// var myDiv = $(".container");
+//     myDiv.html("");
+
+function createTimeSlots() {
       for ( var i = 9; i <= 17; i++ ) {
             
+
+
+            var time = momHr
+
             var data = 'aasdf'
 
-            var rows = '';
-            var template = `
+               var template = `
             <div class="row">
                   <div id="template-container">
                   <div class='time-slot'>
                       ${i}AM
                   </div>
                   </div>
-                  <div>
-                      <textarea class='text-area'>${data}</textarea>
+                  <div class='past'>
+                      <textarea id='text-area${i}'>${data}</textarea>
                   </div>
                   <div class='save-parent'>
                       <button class='save-btn' data-hours="${i}">SAVE</button>
                   </div>
             </div>
-            `;
-
-            myDiv.innerHTML = '<h1>Hello World</h1>'
+            `;   
             myDiv.append(template)
+            myDiv.innerHTML = '<h1>Hello World</h1>'
+            
             console.log(myDiv)
+            console.log(time)
+            
+            //textArea[i].css.style.backgroundColor = 'red'
 
-}
+                  //textArea.classList.add('future')
+
+            // if( i = mom ) {
+            //       $('textArea').css('background', '#ccc');
+            // }
+            
+      }
+};
+
+
+
+
+
+//createTimeSlots();      
 
