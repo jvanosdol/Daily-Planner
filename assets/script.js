@@ -300,7 +300,7 @@ if ( hour < 9 ) {
       textArea1.style.backgroundColor = 'coral';
       textArea1.style.color = 'white';
 } else {
-      textArea1.style.backgroundColor = 'white';
+      textArea1.style.backgroundColor = 'lightgrey';
 }
 
 // row 2 color
@@ -310,7 +310,7 @@ if ( hour < 10 ) {
       textArea2.style.backgroundColor = 'coral';
       textArea2.style.color = 'white';
 } else {
-      textArea2.style.backgroundColor = 'white';
+      textArea2.style.backgroundColor = 'lightgrey';
 }
 
 // row 3 color
@@ -320,7 +320,7 @@ if ( hour < 11 ) {
       textArea3.style.backgroundColor = 'coral';
       textArea3.style.color = 'white';
 } else {
-      textArea3.style.backgroundColor = 'white';
+      textArea3.style.backgroundColor = 'lightgrey';
 }
 
 // row 4 color
@@ -330,7 +330,7 @@ if ( hour < 12 ) {
       textArea4.style.backgroundColor = 'coral';
       textArea4.style.color = 'white';
 } else {
-      textArea4.style.backgroundColor = 'white';
+      textArea4.style.backgroundColor = 'lightgrey';
 }
 
 // row 5 color
@@ -340,7 +340,7 @@ if ( hour < 13 ) {
       textArea5.style.backgroundColor = 'coral';
       textArea5.style.color = 'white';
 } else {
-      textArea5.style.backgroundColor = 'white';
+      textArea5.style.backgroundColor = 'lightgrey';
 }
 
 // row 6 color
@@ -350,7 +350,7 @@ if ( hour < 14 ) {
       textArea6.style.backgroundColor = 'coral';
       textArea6.style.color = 'white';
 } else {
-      textArea6.style.backgroundColor = 'white';
+      textArea6.style.backgroundColor = 'lightgrey';
 }
 
 // row 7 color
@@ -360,7 +360,7 @@ if ( hour < 15 ) {
       textArea7.style.backgroundColor = 'coral';
       textArea7.style.color = 'white';
 } else {
-      textArea7.style.backgroundColor = 'white';
+      textArea7.style.backgroundColor = 'lightgrey';
 }
 
 // row 8 color
@@ -370,7 +370,7 @@ if ( hour < 16 ) {
       textArea8.style.backgroundColor = 'coral';
       textArea8.style.color = 'white';
 } else {
-      textArea8.style.backgroundColor = 'white';
+      textArea8.style.backgroundColor = 'lightgrey';
 }
 
 // row 9 color
@@ -380,7 +380,7 @@ if ( hour < 17 ) {
       textArea9.style.backgroundColor = 'coral';
       textArea9.style.color = 'white';
 } else {
-      textArea9.style.backgroundColor = 'white';
+      textArea9.style.backgroundColor = 'lightgrey';
 }
 
 
