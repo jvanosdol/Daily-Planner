@@ -50,6 +50,7 @@ git clone https://github.com/jvanosdol/daily-planner
 
 - Planner Screenshot
 
+
   ![screenshot](/assets/planner-screenshot.png)
 
 
